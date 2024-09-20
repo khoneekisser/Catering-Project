@@ -1,0 +1,100 @@
+.popupWrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    overflow: auto;
+}
+
+.popupCateringData {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 20%;
+    max-height: 75%;
+    margin-left: 100px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    overflow: auto;
+}
+
+#closePopup {
+    display: block;
+    margin-top: 10px;
+    background-color: #ff0101;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#closePopup:hover {
+    background-color: #950404;
+}
+
+#clientsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#clientsTable th,
+#clientsTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#clientsTable th {
+    background-color: #f2f2f2;
+}
+
+#clientsTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+
+/* Style for the toggle-active button */
+.toggle-active {
+    background-color: rgb(87, 252, 22); /* Default color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Hover effect */
+.toggle-active:hover {
+    background-color: rgb(18, 132, 3); /* Hover color */
+}
+
+/* Active (click) effect */
+.toggle-active:active {
+    background-color: rgb(223, 144, 25); /* Active (click) color */
+    transition: background-color 0.1s ease;
+}

@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8),
+                0 0 40px rgba(255, 0, 255, 0.6),
+                0 0 60px rgba(255, 0, 255, 0.4),
+                0 0 80px rgba(255, 0, 255, 0.2),
+                0 0 100px rgba(255, 0, 255, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    width: calc(100% - 24px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+    background-color: #444;
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #555;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-bottom: 40px;
+    transform: translateX(-50%);
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+#fileNamesContainer,
+#PanNoFileNamesContainer,
+#RegNoFileNamesContainer {
+    margin-top: 5px;
+}
+
+#fileNamesContainer span,
+#PanNoFileNamesContainer span,
+#RegNoFileNamesContainer span {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px;
+    border-radius: 3px;
+}

@@ -1,0 +1,61 @@
+.profile-container {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: inline-block;
+    width: 48%;
+    box-sizing: border-box;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+.search-container:last-child {
+    margin-right: 0;
+}
+
+.search-container input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-container input[type="date"] {
+    width: auto;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-container select {
+    width: auto;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-container button {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff69b4 !important; /* light pink color */
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+
+.search-container button:hover {
+    background-color: #ff1493 !important; /* darker pink color for hover effect */
+}
+
+.search-container button:active {
+    background-color: #ff69b4 !important; /* light pink color for active state */
+}

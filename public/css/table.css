@@ -1,0 +1,156 @@
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-spacing: 0; /* Remove spacing between table cells */
+}
+
+/* Style for table headers */
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Style for table cells */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    overflow: hidden; /* Ensure content does not overflow */
+    white-space: nowrap; /* Prevent content from wrapping */
+}
+
+th, td:nth-child(5) {
+    white-space: normal; /* Allow wrapping in the description column */
+    width: 200px; /* Fixed width for the description column */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+/* Style for table rows */
+/* tr {
+    height: 50px; /* Set the desired height for the table rows */
+
+
+/* Style for even table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tfoot tr:nth-child(even) {
+    background-color: #9effff;
+}
+
+/* Style for images in table cells */
+td img {
+    display: block;
+    margin: auto;
+    max-width: 100%; /* Ensure images do not exceed cell width */
+    max-height: 100%; /* Ensure images do not exceed cell height */
+}
+
+/* Style for action buttons */
+a.action-button, .togggle{
+    padding: 8px 16px;
+    background-color: #2ff736;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 3px; /* Adjust margin-left instead of margin-right */
+    margin-right: 3px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+a.action-button:hover {
+    background-color: #45a049;
+}
+
+.action-button-cancel {
+    /* Generic styles for action buttons */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    margin-left: 3px; /* Adjust margin-left instead of margin-right */
+    margin-right: 3px;
+    border-radius: 5px;
+    font-size: 16px;
+    /* Additional common styles */
+}
+
+.order-cancelled-button {
+    /* Styles specific to 'Order Cancelled' state */
+    background-color: #c53838;
+    color: #f6f4f4;
+    /* Additional styles */
+}
+
+.order-cancelled-button:hover {
+    background-color: #894937;
+}
+
+.cancel-order-button {
+    /* Styles specific to 'Cancel Order' state */
+    background-color: #f9310e;
+    color: #fff;
+    /* Additional styles */
+}
+.cancel-order-button:hover {
+    background-color: #95290b;
+}
+
+/* Style for the Submit button */
+.submit-button {
+    padding: 8px 16px;
+    background-color: #2ff736;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for the Submit button */
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+
+
+button.toggle {
+    padding: 8px 16px;
+    background-color: #2ff736;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.toggle:hover {
+    background-color: #24cc2d; /* Darker shade of green on hover */
+}
+
+button.toggle:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+button.toggle:active {
+    transform: translateY(1px); /* Add slight downward movement on click */
+}
+
+.btn-link {
+    color: red; /* Change color as needed */
+    font-size: 1.5em; /* Adjust size as needed */
+    text-decoration: none; /* Remove underline */
+}
+
+.btn-link:hover {
+    color: darkred; /* Change hover color as needed */
+    text-decoration: none; /* Remove underline on hover */
+}
+
